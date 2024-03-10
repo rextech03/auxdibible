@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import Link from 'next/link';
 import { BsCode, BsGear, BsGithub, BsLink, BsPhone } from 'react-icons/bs';
@@ -35,9 +36,9 @@ export default function Home() {
             </div>
         </div>
       </section>
-      <footer className={"items-row justify-between font-montserrat text-lg bg-neutral-400 dark:bg-neutral-700 p-2"}>
-        <span className={"items-row gap-2"}>Built with <SiNextdotjs/> Next.js</span>
-        <span className={"items-row text-2xl gap-4"}>
+      <footer className={"flex justify-between font-montserrat text-lg bg-neutral-400 dark:bg-neutral-700 p-2"}>
+        <span className={"flex items-center gap-2"}>Built with <SiNextdotjs/> Next.js</span>
+        <span className={"flex text-2xl gap-4"}>
           <Link href={"https://github.com/Auxdible"} className={"before:underline-custom relative hover:before:scale-100 before:translate-y-0.5"}>
             <BsGithub/>
           </Link>
@@ -49,3 +50,4 @@ export default function Home() {
     </main>
   )
 }
+

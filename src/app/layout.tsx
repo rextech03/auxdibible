@@ -1,4 +1,4 @@
-import Navigation from "@/app/(home)/navbar";
+import Navigation from "@/components/utils/navbar";
 import Providers from "@/components/Providers"
 import '@/styles/global.scss';
 import { Metadata } from "next";
@@ -16,10 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={"dark:bg-neutral-800 bg-neutral-300"}>
-        <Providers>
+        {/* <Providers> */}
           <Navigation/>
           {children}
-        </Providers>
+        {/* </Providers> */}
       </body>
     </html>
   )
